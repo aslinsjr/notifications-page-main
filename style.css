@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(205, 33%, 90%, 0.2);
+}
+
+p {
+    font-size: 16px;
+    color: hsla(0, 0%, 0%, 0.6);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main */
+.notification-container {
+    background-color: white;
+    width: 700px;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.notifications-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    align-items: center;
+}
+
+#notification-title {
+    font-size: 1.5rem;
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+}
+
+.title-and-number {
+    display: flex;
+    align-items: center;
+}
+
+.number-box {
+    margin-left: 0.5rem;
+    width: 1.8rem;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#notification-number {
+    color: white;
+}
+
+.active {
+    background-color: hsl(219, 85%, 26%);
+}
+
+#mark-all-btn {
+    cursor: pointer;
+}
+
+#mark-all-btn:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.notification-message-container {
+    padding: 0 2rem;
+}
+
+.notification-box {
+    display: flex;
+    flex: 1;
+    margin: 0.5rem auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.notification-box.unread {
+    background-color: hsla(205, 33%, 90%, 0.3);
+}
+
+.avatar-img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+}
+
+.notification {
+    margin-top: 0.5rem;
+}
+
+.notfication-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-name { 
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+.user-name:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.message-box {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding:1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+}
+
+.message-box:hover {
+    background-color: hsl(211, 68%, 94%);
+}
+.red-dot {
+    display: flex;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.red-dot.active {
+    background-color: red;
+}
+
+.notification-link{
+    color: hsl(219, 85%, 26%);
+}
+
+.notification-link:hover{
+    font-weight: 800;
+}
+
+a.notification-link:visited {
+    color: hsl(225,5.45%,43.14%);
+}
+
+/* Footer */
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
